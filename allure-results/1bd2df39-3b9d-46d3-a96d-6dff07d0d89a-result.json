@@ -1,0 +1,53 @@
+{
+    "name": "negativeAuthValidLoginTest5",
+    "start": 1752577803118,
+    "stop": 1752577807771,
+    "stage": "finished",
+    "description": "Валидация поля 'Логин'. Заполнено: в верхнем регистре",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "1bd2df39-3b9d-46d3-a96d-6dff07d0d89a",
+    "historyId": "210a2f6af6b4766aa5275a634e20e83c",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest.negativeAuthValidLoginTest5",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "negativeAuthValidLoginTest5"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27589)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

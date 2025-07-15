@@ -1,0 +1,53 @@
+{
+    "name": "toLogOutTest",
+    "start": 1752578104211,
+    "stop": 1752578110047,
+    "stage": "finished",
+    "description": "Деавторизация пользователя",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c5b7f9ce-416d-42e2-abb2-d8462d52c14b",
+    "historyId": "39d5270cb97209962d16ae0ba5b1fd96",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.MainPageTest.toLogOutTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "toLogOutTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27646)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

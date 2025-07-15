@@ -1,0 +1,53 @@
+{
+    "name": "checkAboutCompanyTest",
+    "start": 1752577519194,
+    "stop": 1752577524694,
+    "stage": "finished",
+    "description": "Проверка торгового знака",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "debf0b05-ebac-4f01-8dfa-43732c351b14",
+    "historyId": "b49e508eb07d6a21dff729f0653d1b66",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AboutPageTest.checkAboutCompanyTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AboutPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "checkAboutCompanyTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AboutPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27571)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

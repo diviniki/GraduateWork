@@ -1,0 +1,53 @@
+{
+    "name": "validationTitleFieldNegativeTest1",
+    "start": 1752578908152,
+    "stop": 1752578915904,
+    "stage": "finished",
+    "description": "Валидация поля 'Заголовок'. Заполнено: пусто",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "c80da1f2-0095-403a-99c6-8d52ca782dd3",
+    "historyId": "71990ea08e8e7b044885a4906abe88a1",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.ValidationNewsFormTest.validationTitleFieldNegativeTest1",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.ValidationNewsFormTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "validationTitleFieldNegativeTest1"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.ValidationNewsFormTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27765)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

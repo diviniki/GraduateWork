@@ -1,0 +1,53 @@
+{
+    "name": "checkVersionValueTest",
+    "start": 1752577506722,
+    "stop": 1752577513529,
+    "stage": "finished",
+    "description": "Проверка версии",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "b79521a5-5d95-47b1-9940-1db1e51f23ad",
+    "historyId": "8c2b50b8f7ab8cc07f193c4128c21199",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AboutPageTest.checkVersionValueTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AboutPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "checkVersionValueTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AboutPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27571)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

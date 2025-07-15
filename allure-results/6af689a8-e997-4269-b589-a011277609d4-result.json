@@ -1,0 +1,53 @@
+{
+    "name": "negativeAuthValidPasswordTest2",
+    "start": 1752577830870,
+    "stop": 1752577835524,
+    "stage": "finished",
+    "description": "Валидация поля 'Пароль'. Заполнено: пробел",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "6af689a8-e997-4269-b589-a011277609d4",
+    "historyId": "a6dc2639eadf5ae525418b44908ef508",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest.negativeAuthValidPasswordTest2",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "negativeAuthValidPasswordTest2"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27589)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

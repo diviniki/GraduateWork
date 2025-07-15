@@ -1,0 +1,53 @@
+{
+    "name": "goToAboutPageTest",
+    "start": 1752578110056,
+    "stop": 1752578115211,
+    "stage": "finished",
+    "description": "Проверка перехода на страницу 'О приложении'",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "3ce88f7f-9f0c-4021-8757-cc818aadd877",
+    "historyId": "ed18865684b2c88966122237f74ee004",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.MainPageTest.goToAboutPageTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "goToAboutPageTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27646)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

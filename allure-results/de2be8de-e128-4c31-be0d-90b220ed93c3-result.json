@@ -1,0 +1,53 @@
+{
+    "name": "positiveAuthTest",
+    "start": 1752577985214,
+    "stop": 1752577990901,
+    "stage": "finished",
+    "description": "Позитивный сценарий: успешная авторизация",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "de2be8de-e128-4c31-be0d-90b220ed93c3",
+    "historyId": "bc5a0fc70c7fccd297e8108860b675b3",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AuthPagePositiveTest.positiveAuthTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPagePositiveTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "positiveAuthTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPagePositiveTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27628)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

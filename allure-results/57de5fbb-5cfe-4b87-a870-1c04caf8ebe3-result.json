@@ -1,0 +1,53 @@
+{
+    "name": "validationCategoryFieldNegativeTest1",
+    "start": 1752578806013,
+    "stop": 1752578812823,
+    "stage": "finished",
+    "description": "Валидация поля 'Категория'. Заполнено: пусто",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "57de5fbb-5cfe-4b87-a870-1c04caf8ebe3",
+    "historyId": "3d6c4656a6b38967572c92c901e106fe",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.ValidationNewsFormTest.validationCategoryFieldNegativeTest1",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.ValidationNewsFormTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "validationCategoryFieldNegativeTest1"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.ValidationNewsFormTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(27754)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}
