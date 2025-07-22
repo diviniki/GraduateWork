@@ -1,0 +1,117 @@
+{
+    "name": "negativeAuthValidPasswordTest6",
+    "start": 1753162250495,
+    "stop": 1753162255281,
+    "stage": "finished",
+    "description": "Валидация поля 'Пароль'. Заполнено: на кириллице",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Вводим логин: login2",
+            "start": 1753162254494,
+            "stop": 1753162254494,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Вводим пароль: на кириллице",
+            "start": 1753162254573,
+            "stop": 1753162254573,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Нажимаем кнопку войти",
+            "start": 1753162254595,
+            "stop": 1753162254595,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Сверяем текст ошибки: 2131820616",
+            "start": 1753162254932,
+            "stop": 1753162254932,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "cd4736f9-f11f-43a5-bc73-353c08cfa5bb",
+    "historyId": "5b472d1ac94a5c3de199bad115939ac7",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest.negativeAuthValidPasswordTest6",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "negativeAuthValidPasswordTest6"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPageNegativeTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(3307)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

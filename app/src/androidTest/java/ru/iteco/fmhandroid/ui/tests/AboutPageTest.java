@@ -1,14 +1,5 @@
 package ru.iteco.fmhandroid.ui.tests;
 
-import static ru.iteco.fmhandroid.ui.pages.AboutPage.checkAboutCompany;
-import static ru.iteco.fmhandroid.ui.pages.AboutPage.checkVersion;
-import static ru.iteco.fmhandroid.ui.pages.AboutPage.checkVersionValue;
-import static ru.iteco.fmhandroid.ui.pages.AboutPage.getBackToMainPage;
-import static ru.iteco.fmhandroid.ui.pages.AuthPage.checkLoadPage;
-import static ru.iteco.fmhandroid.ui.pages.AuthPage.toLogIn;
-import static ru.iteco.fmhandroid.ui.pages.MainPage.checkLogo;
-import static ru.iteco.fmhandroid.ui.pages.MainPage.goToAboutPage;
-
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
@@ -22,12 +13,20 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Description;
 import ru.iteco.fmhandroid.ui.AppActivity;
+import ru.iteco.fmhandroid.ui.pages.AboutPage;
+import ru.iteco.fmhandroid.ui.pages.AuthPage;
+import ru.iteco.fmhandroid.ui.pages.MainPage;
 
 @LargeTest
 @RunWith(AllureAndroidJUnit4.class)
 public class AboutPageTest {
+    AboutPage aboutPage = new AboutPage();
+    MainPage mainPage = new MainPage();
+    AuthPage authPage = new AuthPage();
+
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(AppActivity.class);
@@ -35,9 +34,9 @@ public class AboutPageTest {
     @Before
     public void tryLogIn() throws InterruptedException {
         try {
-            Thread.sleep(2500);
-            checkLoadPage();
-            toLogIn();
+            Thread.sleep(2800);
+            authPage.checkLoadPage();
+            authPage.toLogIn();
         }
         catch (Exception e) {
         }
@@ -60,29 +59,38 @@ public class AboutPageTest {
     @Description("Проверка отображения страницы") //"Проверяем, что страница загружается"
     @Test
     public void checkAboutPageTest() {
-        goToAboutPage();
-        checkVersion();
+        Allure.step("Переходим на страницу: О приложении");
+        mainPage.goToAboutPage();
+        Allure.step("Ищем на странице слово: Версия");
+        aboutPage.checkVersion();
     }
 
     @Description("Проверка версии") //"Проверяем значение в поле Версия"
     @Test
     public void checkVersionValueTest() {
-        goToAboutPage();
-        checkVersionValue();
+        Allure.step("Переходим на страницу: О приложении");
+        mainPage.goToAboutPage();
+        Allure.step("Ищем на странице значение: Версия");
+        aboutPage.checkVersionValue();
     }
 
     @Description("Проверка торгового знака") //"Проверяем торговый знак"
     @Test
     public void checkAboutCompanyTest() {
-        goToAboutPage();
-        checkAboutCompany();
+        Allure.step("Переходим на страницу: О приложении");
+        mainPage.goToAboutPage();
+        Allure.step("Ищем на странице слово: О компании");
+        aboutPage.checkAboutCompany();
     }
 
     @Description("Проверка перехода обратно на главную страницу через кнопку 'Вернуться'") //"Возврат на главную через кнопку 'Вернуться'"
     @Test
     public void checkGetBackToMainPageTest() {
-        goToAboutPage();
-        getBackToMainPage();
-        checkLogo();
+        Allure.step("Переходим на страницу: О приложении");
+        mainPage.goToAboutPage();
+        Allure.step("Переходим обратно на страницу: Главная");
+        aboutPage.getBackToMainPage();
+        Allure.step("Проверяем, что открылась главная страница");
+        mainPage.checkLogo();
     }
 }

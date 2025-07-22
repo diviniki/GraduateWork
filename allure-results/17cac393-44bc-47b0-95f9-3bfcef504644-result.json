@@ -1,0 +1,53 @@
+{
+    "name": "checkTitleAtAuthPageTest",
+    "start": 1753162334699,
+    "stop": 1753162339394,
+    "stage": "finished",
+    "description": "Проверка отображения страницы",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "17cac393-44bc-47b0-95f9-3bfcef504644",
+    "historyId": "da6410f0f198d5c5d1a1130a680ceed",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.AuthPagePositiveTest.checkTitleAtAuthPageTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPagePositiveTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "checkTitleAtAuthPageTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.AuthPagePositiveTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(3326)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

@@ -1,11 +1,5 @@
 package ru.iteco.fmhandroid.ui.tests;
 
-import static ru.iteco.fmhandroid.ui.pages.AboutPage.checkVersion;
-import static ru.iteco.fmhandroid.ui.pages.AuthPage.*;
-import static ru.iteco.fmhandroid.ui.pages.MainPage.*;
-import static ru.iteco.fmhandroid.ui.pages.NewsPage.editNewsButton;
-import static ru.iteco.fmhandroid.ui.pages.OurMissionPage.checkTitle;
-
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.espresso.IdlingRegistry;
 import androidx.test.ext.junit.rules.ActivityScenarioRule;
@@ -24,17 +18,28 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Description;
 import io.qameta.allure.kotlin.Step;
 import ru.iteco.fmhandroid.EspressoIdlingResources;
 import ru.iteco.fmhandroid.PasswordFile;
 import ru.iteco.fmhandroid.R;
 import ru.iteco.fmhandroid.ui.AppActivity;
+import ru.iteco.fmhandroid.ui.pages.AboutPage;
 import ru.iteco.fmhandroid.ui.pages.AuthPage;
+import ru.iteco.fmhandroid.ui.pages.MainPage;
+import ru.iteco.fmhandroid.ui.pages.NewsPage;
+import ru.iteco.fmhandroid.ui.pages.OurMissionPage;
 
 @LargeTest
 @RunWith(AllureAndroidJUnit4.class)
 public class MainPageTest {
+    MainPage mainPage = new MainPage();
+    AuthPage authPage = new AuthPage();
+    NewsPage newsPage = new NewsPage();
+    AboutPage aboutPage = new AboutPage();
+    OurMissionPage ourMissionPagePage = new OurMissionPage();
+
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(AppActivity.class);
@@ -57,9 +62,9 @@ public class MainPageTest {
     @Before
     public void tryLogIn() throws InterruptedException {
         try {
-            Thread.sleep(2500);
-            checkLoadPage();
-            toLogIn();
+            Thread.sleep(2800);
+            authPage.checkLoadPage();
+            authPage.toLogIn();
         }
         catch (Exception e) {
         }
@@ -87,48 +92,60 @@ public class MainPageTest {
     @Description("Проверка отображения страницы") //"Проверяем, что страница загружается"
     @Test
     public void checkLogoAtMainPageTest() {
-        checkLogo();
+        Allure.step("Проверяем, что открылась главная страница");
+        mainPage.checkLogo();
     }
 
 
     @Description("Проверка перехода на страницу 'О приложении'") //"Переход на страницу 'О приложении'"
     @Test
     public void goToAboutPageTest() {
-        goToAboutPage();
-        checkVersion();
+        Allure.step("Переходим на страницу: О приложении");
+        mainPage.goToAboutPage();
+        Allure.step("Ищем на странице слово: Версия");
+        aboutPage.checkVersion();
     }
 
     @Description("Проверка перехода на страницу 'Новости'") //"Переход на страницу 'Новости' через меню"
     @Test
     public void goToNewsPageTest() {
-        goToNewsPage();
-        editNewsButton();
+        Allure.step("Переходим на страницу: Новости");
+        mainPage.goToNewsPage();
+        Allure.step("Проверяем, что страница открылась");
+        newsPage.editNewsButton();
     }
 
     @Description("Проверка перехода на страницу 'Все новости'")  //"Переход на страницу 'Новости' через кнопку 'Все новости'"
     @Test
     public void goToAllNewsPageTest() {
-        goToAllNewsPage();
-        editNewsButton();
+        Allure.step("Переходим на страницу: Все новости");
+        mainPage.goToAllNewsPage();
+        Allure.step("Проверяем, что страница открылась");
+        newsPage.editNewsButton();
     }
 
     @Description("Проверка перехода на страницу 'Наша миссия'") //"Переход на страницу 'Наша миссия'"
     @Test
     public void goToMissionPageTest() {
-        goToMissionPage();
-        checkTitle();
+        Allure.step("Переходим на страницу: Наша миссия");
+        mainPage.goToMissionPage();
+        Allure.step("Проверяем, что страница открылась");
+        ourMissionPagePage.checkTitle();
     }
 
     @Description("Проверка кнопки свернуть/развернуть список новостей")  //"Свернуть раздел новостей и убедиться что список исчез"
     @Test
     public void expandMaterialTest() {
-        expandMaterial();
+        Allure.step("Сворачиваем новости и проверяем, что они больше не отображаются на экране");
+        mainPage.expandMaterial();
     }
 
     @Description("Деавторизация пользователя")  //"Выход из профиля"
     @Test
     public void toLogOutTest() {
-        toLogOut();
-        checkLoadPage();
+        Allure.step("Выходим из профиля");
+        mainPage.toLogOut();
+        Allure.step("Проверяем, что открылась страница авторизации");
+        authPage.checkLoadPage();
     }
 }

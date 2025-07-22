@@ -1,0 +1,85 @@
+{
+    "name": "checkEditNewsButtonTest",
+    "start": 1753162647771,
+    "stop": 1753162654181,
+    "stage": "finished",
+    "description": "Проверка отображения страницы через наличие кнопки открытия Панели управления",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Переходим на страницу: Все новости",
+            "start": 1753162653232,
+            "stop": 1753162653232,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что страница открылась",
+            "start": 1753162653594,
+            "stop": 1753162653594,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "809a7bc4-3863-4f23-9878-44a346f9b23e",
+    "historyId": "b762f1f543c62575e40eba34bec4704e",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.NewsPageTest.checkEditNewsButtonTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.NewsPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "checkEditNewsButtonTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.NewsPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(3371)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

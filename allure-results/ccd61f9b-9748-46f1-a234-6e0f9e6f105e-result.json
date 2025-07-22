@@ -1,0 +1,69 @@
+{
+    "name": "expandMaterialTest",
+    "start": 1753162402714,
+    "stop": 1753162408230,
+    "stage": "finished",
+    "description": "Проверка кнопки свернуть/развернуть список новостей",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Сворачиваем новости и проверяем, что они больше не отображаются на экране",
+            "start": 1753162407482,
+            "stop": 1753162407482,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "ccd61f9b-9748-46f1-a234-6e0f9e6f105e",
+    "historyId": "eebebd934b29bae792de89b47d7cf27f",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.MainPageTest.expandMaterialTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "expandMaterialTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.MainPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(3336)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

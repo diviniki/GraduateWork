@@ -23,27 +23,27 @@ public class AboutPage {
     private static String string_about_company_info_label_text_view = "© Айтеко, 2022";
 
     // "Ищем 'Версия' на странице"
-    public static void checkVersion() {
+    public void checkVersion() {
         ViewInteraction versionPage = onView(withId(about_version_title_text_view));
         checkObjectDisplayed(versionPage);
     }
 
     // Ищем значение версии
-    public static void checkVersionValue() {
+    public void checkVersionValue() {
         ViewInteraction versionValue = onView(withId(about_version_value_text_view));
         checkObjectDisplayed(versionValue);
         checkTextInField(versionValue, string_about_version_value_text_view);
     }
 
     // "Ищем торговый знак на странице"
-    public static void checkAboutCompany() {
+    public void checkAboutCompany() {
         ViewInteraction aboutCompany = onView(withId(about_company_info_label_text_view));
         checkObjectDisplayed(aboutCompany);
         checkTextInField(aboutCompany, string_about_company_info_label_text_view);
     }
 
     // "Вернуться на главную"
-    public static void getBackToMainPage() {
+    public void getBackToMainPage() {
         ViewInteraction backButton = onView(withId(about_back_image_button));
         checkObjectDisplayed(backButton);
         clickByButton(backButton);

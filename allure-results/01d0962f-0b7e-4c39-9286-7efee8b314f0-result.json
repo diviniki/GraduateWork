@@ -1,0 +1,101 @@
+{
+    "name": "goBackToMainPageTest",
+    "start": 1753162454322,
+    "stop": 1753162461790,
+    "stage": "finished",
+    "description": "Проверка перехода обратно на главную страницу",
+    "descriptionHtml": null,
+    "status": "passed",
+    "statusDetails": null,
+    "steps": [
+        {
+            "name": "Переходим на страницу: Наша миссия",
+            "start": 1753162459882,
+            "stop": 1753162459882,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Переходим обратно на страницу: Главная",
+            "start": 1753162460272,
+            "stop": 1753162460272,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        },
+        {
+            "name": "Проверяем, что страница Главная открылась",
+            "start": 1753162460976,
+            "stop": 1753162460977,
+            "stage": "finished",
+            "description": null,
+            "descriptionHtml": null,
+            "status": "passed",
+            "statusDetails": null,
+            "steps": [
+            ],
+            "attachments": [
+            ],
+            "parameters": [
+            ]
+        }
+    ],
+    "attachments": [
+    ],
+    "parameters": [
+    ],
+    "uuid": "01d0962f-0b7e-4c39-9286-7efee8b314f0",
+    "historyId": "34a090636b253cf87afd76dfc4b8e651",
+    "fullName": "ru.iteco.fmhandroid.ui.tests.OurMissionPageTest.goBackToMainPageTest",
+    "labels": [
+        {
+            "name": "package",
+            "value": "ru.iteco.fmhandroid.ui.tests"
+        },
+        {
+            "name": "testClass",
+            "value": "ru.iteco.fmhandroid.ui.tests.OurMissionPageTest"
+        },
+        {
+            "name": "testMethod",
+            "value": "goBackToMainPageTest"
+        },
+        {
+            "name": "suite",
+            "value": "ru.iteco.fmhandroid.ui.tests.OurMissionPageTest"
+        },
+        {
+            "name": "host",
+            "value": "localhost"
+        },
+        {
+            "name": "thread",
+            "value": "Instr: androidx.test.runner.AndroidJUnitRunner(3351)"
+        },
+        {
+            "name": "framework",
+            "value": "junit4"
+        },
+        {
+            "name": "language",
+            "value": "kotlin"
+        }
+    ]
+}

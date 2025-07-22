@@ -26,7 +26,7 @@ public class MainPage {
     static String section_exit = "Выйти";
 
     // "Ищем logo страницы"
-    public static void checkLogo() {
+    public void checkLogo() {
         ViewInteraction logoPage = onView(withId(trademark_image_view));
         checkObjectDisplayed(logoPage);
     }
@@ -39,7 +39,7 @@ public class MainPage {
     }
 
     // "Переход на страницу 'О приложении'"
-    public static void goToAboutPage() {
+    public void goToAboutPage() {
         clickByMenu();
         ViewInteraction aboutPageButton = onView(allOf(withId(android.R.id.title), withText(section_about)));
         checkObjectDisplayed(aboutPageButton);
@@ -48,7 +48,7 @@ public class MainPage {
     }
 
     // "Переход на страницу 'Новости' через меню"
-    public static void goToNewsPage() {
+    public void goToNewsPage() {
         clickByMenu();
         ViewInteraction newsPageButton = onView(allOf(withId(android.R.id.title), withText(section_news)));
         checkObjectDisplayed(newsPageButton);
@@ -56,21 +56,21 @@ public class MainPage {
     }
 
     // "Переход на страницу 'Наша миссия'"
-    public static void goToMissionPage() {
+    public void goToMissionPage() {
         ViewInteraction missionPageButton = onView(withId(our_mission_image_button));
         checkObjectDisplayed(missionPageButton);
         clickByButton(missionPageButton);
     }
 
     // "Переход на страницу 'Новости' через кнопку 'Все новости'"
-    public static void goToAllNewsPage() {
+    public void goToAllNewsPage() {
         ViewInteraction allNewsPageButton = onView(withId(all_news_text_view));
         checkObjectDisplayed(allNewsPageButton);
         clickByButton(allNewsPageButton);
     }
 
     // "Свернуть раздел новостей"
-    public static void expandMaterial() {
+    public void expandMaterial() {
         ViewInteraction expandMaterialButton = onView(withId(expand_material_button));
         ViewInteraction allNewsPageButton = onView(withId(all_news_text_view));
         checkObjectDisplayed(expandMaterialButton);
@@ -79,7 +79,7 @@ public class MainPage {
     }
 
     // "Выход из профиля"
-    public static void toLogOut() {
+    public void toLogOut() {
         ViewInteraction authButton = onView(withId(authorization_image_button));
         checkObjectDisplayed(authButton);
         clickByButton(authButton);

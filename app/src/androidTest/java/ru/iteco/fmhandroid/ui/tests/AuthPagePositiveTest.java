@@ -1,15 +1,5 @@
 package ru.iteco.fmhandroid.ui.tests;
 
-
-import static androidx.test.espresso.matcher.ViewMatchers.withText;
-import static org.hamcrest.Matchers.not;
-import static ru.iteco.fmhandroid.ui.pages.AuthPage.checkLoadPage;
-import static ru.iteco.fmhandroid.ui.pages.AuthPage.clickButton;
-import static ru.iteco.fmhandroid.ui.pages.AuthPage.enterLogin;
-import static ru.iteco.fmhandroid.ui.pages.AuthPage.enterPassword;
-import static ru.iteco.fmhandroid.ui.pages.MainPage.checkLogo;
-import static ru.iteco.fmhandroid.ui.pages.MainPage.toLogOut;
-
 import android.view.View;
 
 import androidx.test.core.app.ActivityScenario;
@@ -28,14 +18,19 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 import io.qameta.allure.android.runners.AllureAndroidJUnit4;
+import io.qameta.allure.kotlin.Allure;
 import io.qameta.allure.kotlin.Description;
 import ru.iteco.fmhandroid.EspressoIdlingResources;
 import ru.iteco.fmhandroid.PasswordFile;
 import ru.iteco.fmhandroid.ui.AppActivity;
+import ru.iteco.fmhandroid.ui.pages.AuthPage;
+import ru.iteco.fmhandroid.ui.pages.MainPage;
 
 @LargeTest
 @RunWith(AllureAndroidJUnit4.class)
 public class AuthPagePositiveTest {
+    MainPage mainPage = new MainPage();
+    AuthPage authPage = new AuthPage();
 
     @Rule
     public ActivityScenarioRule<AppActivity> mActivityScenarioRule =
@@ -49,9 +44,9 @@ public class AuthPagePositiveTest {
     @Before
     public void tryLogOut() throws InterruptedException {
         try {
-            Thread.sleep(2500);
-            checkLogo();
-            toLogOut();
+            Thread.sleep(2800);
+            mainPage.checkLogo();
+            mainPage.toLogOut();
         }
         catch (Error e) {
         }
@@ -85,16 +80,20 @@ public class AuthPagePositiveTest {
     @Description("Проверка отображения страницы") //Проверяем, что страница загружается и отображается Авторизация
     @Test
     public void checkTitleAtAuthPageTest() {
-        checkLoadPage();
+        authPage.checkLoadPage();
     }
 
     @Description("Позитивный сценарий: успешная авторизация") // Успешная авторизация
     @Test
     public void positiveAuthTest() throws InterruptedException {
-        enterLogin(login);
-        enterPassword(password);
-        clickButton();
-        checkLogo();
+        Allure.step("Вводим логин: " + login);
+        authPage.enterLogin(login);
+        Allure.step("Вводим пароль: " + password);
+        authPage.enterPassword(password);
+        Allure.step("Нажимаем кнопку войти");
+        authPage.clickButton();
+        Allure.step("Проверяем, что открылась главная страница");
+        mainPage.checkLogo();
     }
 
 }

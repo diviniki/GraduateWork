@@ -54,100 +54,100 @@ public class NewsPage {
 
 
     // "Ищем кнопку 'Панель управления'"
-    public static void editNewsButton() {
+    public void editNewsButton() {
         ViewInteraction editNewsButton = onView(withId(edit_news_material_button));
         checkObjectDisplayed(editNewsButton);
     }
 
     // "Открываем 'Панель управления'"
-    public static void toEditNewsButton() {
+    public void toEditNewsButton() {
         ViewInteraction toEditNewsButton = onView(withId(edit_news_material_button));
         clickByButton(toEditNewsButton);
     }
 
     // "Ищем кнопку 'Соритровать новость'"
-    public static void sortNewsButton() {
+    public void sortNewsButton() {
         ViewInteraction sortNewsButton = onView(withId(sort_news_material_button));
         checkObjectDisplayed(sortNewsButton);
     }
 
     // "Сортировать"
-    public static void toSortNewsButton() {
+    public void toSortNewsButton() {
         ViewInteraction toSortNewsButton = onView(withId(sort_news_material_button));
         checkObjectDisplayed(toSortNewsButton);
         clickByButton(toSortNewsButton);
     }
 
     // "Ищем кнопку 'Фильтровать новость'"
-    public static void filterNewsButton() {
+    public void filterNewsButton() {
         ViewInteraction filterNewsButton = onView(withId(filter_news_material_button));
         checkObjectDisplayed(filterNewsButton);
     }
 
     // "Фильтровать"
-    public static void toFilterNewsButton() {
+    public void toFilterNewsButton() {
         ViewInteraction toFilterNewsButton = onView(withId(filter_news_material_button));
         checkObjectDisplayed(toFilterNewsButton);
         clickByButton(toFilterNewsButton);
     }
 
     // "Создать"
-    public static void toCreateNewsButton() {
+    public void toCreateNewsButton() {
         ViewInteraction toCreateNewsButton = onView(withId(add_news_image_view));
         checkObjectDisplayed(toCreateNewsButton);
         clickByButton(toCreateNewsButton);
     }
 
     // "Ищем и заполняем поле Категория"
-    public static void enterCategory(String category) {
+    public void enterCategory(String category) {
         ViewInteraction textInputCategory = onView(allOf(withHint(hint_news_item_category_text_auto_complete_text_view), withId(news_item_category_text_auto_complete_text_view)));
         checkObjectDisplayed(textInputCategory);
         enterTextIntoTheFiled(textInputCategory, category);
     }
 
     // "Ищем и заполняем поле Заголовок"
-    public static void enterTitle(String title) {
+    public void enterTitle(String title) {
         ViewInteraction textInputTitle = onView(allOf(withHint(hint_news_item_title_text_input_edit_text), withId(news_item_title_text_input_edit_text)));
         checkObjectDisplayed(textInputTitle);
         enterTextIntoTheFiled(textInputTitle, title);
     }
 
     // "Ищем и заполняем поле Дата"
-    public static void enterDate(String date) {
+    public void enterDate(String date) {
         ViewInteraction textInputDate = onView(allOf(withHint(hint_news_item_publish_date_text_input_edit_text), withId(news_item_publish_date_text_input_edit_text)));
         checkObjectDisplayed(textInputDate);
         enterTextIntoTheFiled(textInputDate, date);
     }
 
     // "Ищем и заполняем поле Время"
-    public static void enterTime(String time) {
+    public void enterTime(String time) {
         ViewInteraction textInputTime = onView(allOf(withHint(hint_news_item_publish_time_text_input_edit_text), withId(news_item_publish_time_text_input_edit_text)));
         checkObjectDisplayed(textInputTime);
         enterTextIntoTheFiled(textInputTime, time);
     }
 
     // "Ищем и заполняем поле Описание"
-    public static void enterDescription(String description) {
+    public void enterDescription(String description) {
         ViewInteraction textInputDescription = onView(allOf(withHint(hint_news_item_description_text_input_edit_text), withId(news_item_description_text_input_edit_text)));
         checkObjectDisplayed(textInputDescription);
         enterTextIntoTheFiled(textInputDescription, description);
     }
 
     // Сохранить публикацию
-    public static void savePublication() {
+    public void savePublication() {
         ViewInteraction saveButton = onView(withId(save_button));
         checkObjectDisplayed(saveButton);
         clickByButton(saveButton);
     }
 
     // Поиск публикации по содержимому
-    public static void searchPublication(String search_text) {
+    public void searchPublication(String search_text) {
         ViewInteraction recyclerView = onView(withId(R.id.news_list_recycler_view));
         clickByRecyclerViewActionsWithDescendant(recyclerView, search_text);
     }
 
     // Удалить публикацию
-    public static void deletePublication(String search_text) {
+    public void deletePublication(String search_text) {
         ViewInteraction recyclerView = onView(withId(R.id.news_list_recycler_view));
         clickByRecyclerViewActionsWithDescendantAndDelete(recyclerView, search_text, delete_news_item_image_view);
         ViewInteraction confirmButton = onView(withId(button1));
@@ -157,25 +157,25 @@ public class NewsPage {
     }
 
     // Убедиться в отсутствии публикации
-    public static void searchDeletedPublication(String search_text) {
+    public void searchDeletedPublication(String search_text) {
         ViewInteraction recyclerView = onView(withId(R.id.news_list_recycler_view));
         clickByRecyclerViewActionsNoWithDescendant(recyclerView, search_text);
     }
 
     // Проверка статуса активности у конкретной публикации
-    public static void checkActivityStatus(String search_text, String search_status) {
+    public void checkActivityStatus(String search_text, String search_status) {
         ViewInteraction recyclerView = onView(withId(R.id.news_list_recycler_view));
         checkActivityStatusInRecyclerViewActionsWithDescendant(recyclerView, search_text, search_status);
     }
 
     // Редактировать публикацию
-    public static void editPublication(String search_text) {
+    public void editPublication(String search_text) {
         ViewInteraction recyclerView = onView(withId(R.id.news_list_recycler_view));
         clickByRecyclerViewActionsWithDescendantAndDelete(recyclerView, search_text, edit_news_item_image_view);
     }
 
     // "Переключение ползунка активности "
-    public static void toSwitchActivityButton() {
+    public void toSwitchActivityButton() {
         ViewInteraction switchActivityButton = onView(withId(switcher));
         checkObjectDisplayed(switchActivityButton);
         scrollToAndClickByButton(switchActivityButton);

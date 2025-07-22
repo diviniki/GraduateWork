@@ -19,14 +19,14 @@ public class OurMissionPage {
     static String section_main = "Главная";
 
     // Проверяем титул страницы
-    public static void checkTitle() {
+    public void checkTitle() {
         ViewInteraction titleText = onView(withId(our_mission_title_text_view));
         checkObjectDisplayed(titleText);
         checkTextInField(titleText, string_our_mission_title_text_view);
     }
 
     // Вернуться на главную
-    public static void goBackToMainPage() {
+    public void goBackToMainPage() {
         clickByMenu();
         ViewInteraction mainPageButton = onView(allOf(withId(android.R.id.title), withText(section_main)));
         checkObjectDisplayed(mainPageButton);
